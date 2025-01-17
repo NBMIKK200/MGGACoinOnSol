@@ -17,28 +17,6 @@ section p {
 }
 
 
-
-/* Solana Gradient Background */
-.solana-gradient {
-    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195);
-}
-
-/* Solana Colors */
-.solana-purple {
-    color: #9945FF;
-}
-
-.solana-aqua {
-    color: #14F195;
-}
-
-.solana-blue {
-    color: #5973FE;
-}
-
-
-
-
 /* Navigation Buttons */
 .nav-button {
     color: #1e1e2f; /* Dark text color for better readability */
@@ -67,7 +45,7 @@ section {
 }
 
 /* If you have specific sections you want to target */
-#home, #contact-us {
+#home, #contact-us, #tokenomics {
     scroll-margin-top: 70px; /* Adjust to match your sticky header height */
 }
 
@@ -297,14 +275,10 @@ section {
 
 
 
-
-
-
-
-
 /* Tokenomics section styling */
 #tokenomics {
     padding: 40px 20px;
+    background: linear-gradient(135deg, #2e2e2e, #1e1e2f); /* Dark gradient background */
     text-align: center; /* Center text within the section */
     border-radius: 8px; /* Rounded corners for better appearance */
     position: relative; /* Position relative for pseudo-elements */
@@ -321,7 +295,7 @@ section {
     left: -10px; /* Adjust as needed */
     right: -10px; /* Adjust as needed */
     bottom: -10px; /* Adjust as needed */
-    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195);
+    background: linear-gradient(135deg, #2e2e2e, #1e1e2f); /* Dark gradient background */
     z-index: -1;
     border-radius: 12px; /* Slightly larger border-radius to create shadow effect */
     filter: blur(15px); /* Adjust blur to achieve the desired shadow effect */
