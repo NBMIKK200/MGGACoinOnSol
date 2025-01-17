@@ -1,3 +1,26 @@
+
+/* Website Container style */
+.container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 0 0px;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Allows long words to wrap onto the next line */
+}
+
+/* Main */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #2e2e2e, #1e1e2f, #3a3a3a);
+    color: #ccc;
+}
+
+
+
 /* Header styling */
 header {
     background: linear-gradient(90deg, #9945FF, #5973FE, #14F195); /* Gradient background */
@@ -71,4 +94,58 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+
+header .social-btn-container {
+    display: flex;
+    align-items: center; /* Aligns buttons vertically center */
+}
+
+
+
+/* Social buttons */
+.social-btn {
+    width: 50px; /* Set width for the button */
+    height: 50px; /* Set height for the button */
+    padding: 0; /* Remove default padding */
+    display: inline-block; /* Ensures buttons are inline */
+    background-size: contain; /* Ensure icon fits within the button */
+    background-position: center; /* Center the icon in the button */
+    background-repeat: no-repeat; /* No repeat of background image */
+    background-color: transparent; /* Ensure background color is transparent */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin: 7px; /* Default margin */
+}
+
+/* Hover effect for buttons */
+.social-btn:hover {
+    opacity: 0.8; /* Slightly change opacity on hover */
+}
+
+/* Additional spacing rules for specific button pairs */
+.social-btn.telegram + .social-btn.dexscreener {
+    margin-left: 30px; /* Extra space between Telegram and DexScreener */
+}
+
+/* Individual button styles for different icons */
+.social-btn.x {
+    background-image: url('X icon.png'); /* Replace with actual icon path */
+}
+
+.social-btn.telegram {
+    background-image: url('Telegram icon.png'); /* Replace with actual icon path */
+}
+
+.social-btn.dexscreener {
+    background-image: url('Dexscreener icon.png'); /* Replace with actual icon path */
+}
+
+.social-btn.dextools {
+    background-image: url('Dextools icon.jpg'); /* Replace with actual icon path */
+}
+
+.social-btn.birdeye {
+    background-image: url('Birdeye icon.jpg'); /* Replace with actual icon path */
 }
