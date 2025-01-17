@@ -149,3 +149,41 @@ header .social-btn-container {
 .social-btn.birdeye {
     background-image: url('Images/Birdeye\ icon.jpg'); /* Replace with actual icon path */
 }
+
+
+
+
+
+
+
+
+
+/* Footer styling */
+footer {
+    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195); /* Gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Adjust padding for less space around content */
+    width: 100%; /* Full width of the page */
+    margin-top: 0; /* Ensure there's no extra margin above the footer */
+    position: static; /* Normal flow positioning */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+footer #social-footer {
+    margin-bottom: 10px; /* Space below the social buttons */
+    margin-top: 10px; /* Remove or adjust space above the section */
+    padding: 0; /* Remove padding if adding extra space */
+}
+
+footer #social-footer h2 {
+    margin: 0; /* Remove margin around the heading */
+    font-size: 1.2em; /* Size of the heading */
+    color: #ffffff; /* White text color for high contrast */
+}
+
+/* Footer text styling */
+footer p {
+    margin: 10px 0 0; /* Space above the text */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
