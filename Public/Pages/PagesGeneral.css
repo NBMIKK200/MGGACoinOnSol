@@ -138,6 +138,10 @@ header .social-btn-container {
     background-image: url('Images/Telegram\ icon.png'); /* Replace with actual icon path */
 }
 
+.social-btn.pumpfun {
+    background-image: url('Images/pump_fun.png'); /* Replace with actual icon path */
+}
+
 .social-btn.dexscreener {
     background-image: url('Images/Dexscreener\ icon.png'); /* Replace with actual icon path */
 }
