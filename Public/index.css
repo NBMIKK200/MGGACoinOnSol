@@ -1,1 +1,41 @@
-.
+/* Set body and html to 100% height to cover the full viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Container to hold the image and buttons */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('your-image.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the full page */
+    background-position: center; /* Centers the image */
+}
+
+/* Button container to align buttons */
+.button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the buttons */
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+/* Style for the buttons */
+.btn {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}

@@ -1,1 +1,337 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGGACoinOnSol</title>
+    <link rel="stylesheet" href="MGGACoin.css">
+    <link rel="icon" href="PyraMythCoin.png" type="image/png">
+    <script defer src="MGGACoin.js"></script>
+    <!-- Jupiter Swap Terminal Script -->
+    <script src="https://terminal.jup.ag/main-v3.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jup-ag/terminal@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+    
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="#home" class="logo-link">
+                    <img src="PyraMythCoin.png" alt="PyraMyth logo">
+                    <span>PyraMyth</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-button">Home</a></li>
+                    <li><a href="#airdrop-details" class="nav-button">Airdrop Details</a></li>
+                    <li><a href="#leaderboard-link" class="nav-button">Leaderboard</a></li>
+                    <li><a href="#chart" class="nav-button">Chart</a></li>
+                    <li><a href="#tokenomics" class="nav-button">Tokenomics</a></li>
+                    <li><a href="#roadmap" class="nav-button">Roadmap</a></li>
+                    <li><a href="#buy-guide" class="nav-button">Buy guide</a></li>
+                    <li><a href="#Jupiter-swap" class="nav-button">Jupiter swap</a></li>
+                    <li><a href="#contact-us" class="nav-button">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-btn-container">
+                <a href="https://x.com/PyraMythCoin" class="social-btn x" aria-label="X" target="_blank"></a>
+                <a href="https://t.me/pyramythcoin" class="social-btn telegram" aria-label="Telegram" target="_blank"></a>
+            </div>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="hero-logo">
+                <h1>PyraMyth</h1>
+                <img src="PyraMythCoin.png" alt="PyraMyth Large Logo">
+            </div>
+            <p class="tagline">Join the Largest Crypto Competition: Invite, Earn, and Grow with PyraMyth – Transparent and Trustworthy Rewards.</p>
+            <p class="ca-container">
+                <span class="ca-label">CA:</span>
+                <span class="ca-address">Soon</span>
+                <span class="copy-button" onclick="copyAddress()">🔗</span>
+            </p>
+        </section>
+
+        <!-- Confirmation and Error Messages -->
+        <div id="confirmation-message" class="confirmation-message" style="display: none;">Address copied to clipboard!</div>
+        <div id="error-message" class="error-message" style="display: none;">Failed to copy address. Please try again.</div>
+
+        <section id="airdrop-details">
+            <h2>Airdrop Details</h2>
+            <p>Join our airdrop competition and earn PyraMyth tokens! The airdrop will be conducted in three phases:</p>
+        
+            <!-- Airdrop Phases Overview Box -->
+            <div class="details-box" id="airdrop-phases">
+                <h3>Overview of Airdrop Phases</h3>
+        
+                <div class="airdrop-phase current-phase">
+                    <div class="phase-title">Validation Airdrop (Current Phase)</div>
+                    <p>Proof of work, distributing 5% of the total supply after approximately 2 months.</p>
+                    <p><em>Started on: Soon...</em></p>
+                    <div class="rewards">
+                        <h4>Estimated Top 3 Rewards:</h4>
+                        <ul>
+                            <li>Rank 1: 6,000,000 PYRM (0.19%) - $1,910 (1M$ MC)</li>
+                            <li>Rank 2: 4,000,000 PYRM (0.13%) - $1,273 (1M$ MC)</li>
+                            <li>Rank 3: 3,000,000 PYRM (0.10%) - $955 (1M$ MC)</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="airdrop-phase">
+                    <div class="phase-title">Phase 2 Airdrop</div>
+                    <p>Distributing 12.5% of the total supply after approximately 6 months.</p>
+                    <p><em>Starts on: Not scheduled yet</em></p>
+                    <div class="rewards">
+                        <h4>Estimated Top 3 Rewards:</h4>
+                        <ul>
+                            <li>Rank 1: 15,000,000 PYRM (0.48%) - $47,746 (10M$ MC)</li>
+                            <li>Rank 2: 10,000,000 PYRM (0.32%) - $31,831 (10M$ MC)</li>
+                            <li>Rank 3: 7,500,000 PYRM (0.24%) - $23,873 (10M$ MC)</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="airdrop-phase">
+                    <div class="phase-title">Phase 3 Airdrop</div>
+                    <p>Distributing 12.5% of the total supply after approximately 6 months.</p>
+                    <p><em>Starts on: Not scheduled yet</em></p>
+                    <div class="rewards">
+                        <h4>Estimated Top 3 Rewards:</h4>
+                        <ul>
+                            <li>Rank 1: 15,000,000 PYRM (0.48%) - $477,465 (100M$ MC)</li>
+                            <li>Rank 2: 10,000,000 PYRM (0.32%) - $318,310 (100M$ MC)</li>
+                            <li>Rank 3: 7,500,000 PYRM (0.24%) - $238,732 (100M$ MC)</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <p class="note">Note: There will be a reset period between each airdrop phase. During this reset, invites and participant progress will be cleared before the next phase begins. Stay engaged and invite friends to maximize your rewards!</p>
+                <p class="estimates">These estimates are based on an assumption of 100,000 participants. Actual rewards may vary based on the final number of participants in each phase.</p>
+                <p class="distribution">Our airdrop distribution balances rewards for both top participants and smaller contributors, ensuring that everyone has the opportunity to earn meaningful rewards.</p>
+
+                <!-- Button for full overview -->
+                <a href="airdrop-details.html" class="details-button">Watch Full Overview of Airdrop Distribution</a>
+            </div>
+        
+            <!-- How to Participate Box -->
+            <div class="details-box" id="participation-details">
+                <h3>How to Participate</h3>
+                <p>To participate in the airdrop, follow these steps:</p>
+                <ol>
+                    <li><strong>Join Our Discord Server:</strong> <a href="https://discord.gg/yourdiscordlink" target="_blank" class="action-link">Click here to join our Discord server</a>. This is where you will receive the latest updates and instructions.</li>
+                    <li><strong>Verify Your Account:</strong> Follow the instructions provided in the Discord server to verify your account.</li>
+                    <li><strong>Inform the PyraMyth Bot:</strong> Send your Solana wallet address to the PyraMyth bot on Discord to ensure you can receive your airdrop.</li>
+                    <li><strong>Create Your Invite Link:</strong> Generate your own invite link in the Discord server.</li>
+                    <li><strong>Invite Friends:</strong> Use your invite link to invite friends and share it wherever you like. The more people you invite, the more rewards you can earn!</li>
+                </ol>
+                <p class="support-info">If you have any questions or need assistance, feel free to reach out to our community moderators on <a href="https://discord.gg/yourdiscordlink" target="_blank" class="action-link">Discord</a> or <a href="https://t.me/pyramythcoin" target="_blank" class="action-link">Telegram</a>.</p>
+            </div>
+        </section>
+        
+        <section id="leaderboard-link">
+            <h2>Leaderboard</h2>
+            <p>Check out the top performers on our leaderboard:</p>
+            <p>Top 3:</p>
+            <a href="leaderboard.html" class="leaderboard-button">See Live Leaderboard</a>
+        </section>
+
+        <section id="chart">
+            <h2>Chart</h2>
+            <div class="chart-container">
+                <iframe
+                    width="100%"
+                    height="600"
+                    src="https://birdeye.so/tv-widget"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="chart-buttons">
+                <a href="https://dexscreener.com" class="social-btn dexscreenertext" aria-label="DexScreenertext" target="_blank"></a>
+                <a href="https://www.dextools.io" class="social-btn dextoolstext" aria-label="Dextoolstext" target="_blank"></a>
+                <a href="https://birdeye.so" class="social-btn birdeyetext" aria-label="Birdeyetext" target="_blank"></a>
+            </div>
+        </section>
+
+        
+        <section id="tokenomics">
+            <h2>Tokenomics</h2>
+            <p id="buy-sell-tax">0% buy & sell tax</p>
+            <p id="total-supply">Current total Supply: 3,141,592,653</p>
+            <p class="lp-locked-text">
+                <a href="https://solscan.io" target="_blank" class="plain-link">
+                    LP locked: 100% LP tokens burned
+                </a>
+            </p>
+
+            <h3>Token Distribution</h3>
+            <div class="tokenomics-visual">
+                <canvas id="tokenomics-chart" width="750" height="750"></canvas>
+            </div>
+
+
+
+            <p class="Validation airdrop wallet">
+                <a href="https://solscan.io" target="_blank" class="plain-link">
+                    Validation Airdrop wallet
+                </a>
+            </p>
+            <p class="Phase 2 airdrop wallet">
+                <a href="https://solscan.io" target="_blank" class="plain-link">
+                    Phase 2 Airdrop wallet
+                </a>
+            </p>
+            <p class="Phase 3 airdrop wallet">
+                <a href="https://solscan.io" target="_blank" class="plain-link">
+                    Phase 3 Airdrop wallet
+                </a>
+            </p>
+            <p class="Dev wallet">
+                <a href="https://solscan.io" target="_blank" class="plain-link">
+                    Dev wallet
+                </a>
+            </p>
+            <p class="Marketing wallet">
+                <a href="https://solscan.io" target="_blank" class="plain-link">
+                    Marketing wallet
+                </a>
+            </p>
+        </section>
+
+        <section id="roadmap">
+            <h2>Roadmap</h2>
+            <div class="timeline-container">
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-item-content">
+                            <h3>Phase 1</h3>
+                            <ul class="roadmap-checklist">
+                                <li class="completed">Community Take Over (CTO)</li>
+                                <li class="completed">Pay and update Dexscreener with socials and website</li>
+                                <li>1k holders</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-item-content">
+                            <h3>Phase 2</h3>
+                            <ul class="roadmap-checklist">
+                                <li>1.5k holders</li>
+                                <li>New All Time High (ATH)</li>
+                                <li>Pay and update Dextools & Birdeye</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-item-content">
+                            <h3>Phase 3</h3>
+                            <ul class="roadmap-checklist">
+                                <li>+1M$ Market Cap</li>
+                                <li>2.5k holders</li>
+                                <li>Strict listed on Jupiter</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-item-content">
+                            <h3>Phase 4</h3>
+                            <ul class="roadmap-checklist">
+                                <li>5k holders</li>
+                                <li>Cex listings</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="buy-guide">
+            <h2>How to Buy PyraMyth</h2>
+            <div class="buy-steps">
+                <div class="buy-step">
+                    <h3>Step 1: Create a Wallet</h3>
+                    <p>To start, you'll need a Crypto wallet that supports Solana. Here are a few options:</p>
+                    <ul>
+                        <li><a href="https://phantom.app" target="_blank">Phantom Wallet</a></li>
+                        <li><a href="https://solflare.com" target="_blank">Solflare Wallet</a></li>
+                        <li><a href="https://www.coinbase.com/en-gb/wallet" target="_blank">Coinbase Wallet</a></li>
+                    </ul>
+                    <p>Follow the instructions on the wallet's website to create and secure your wallet.</p>
+                </div>
+                <div class="buy-step">
+                    <h3>Step 2: Buy Solana</h3>
+                    <p>Purchase Solana (SOL) from an exchange or swapped. Some popular exchanges include:</p>
+                    <ul>
+                        <li><a href="https://binance.com" target="_blank">Binance</a></li>
+                        <li><a href="https://coinbase.com" target="_blank">Coinbase</a></li>
+                        <li><a href="https://swapped.com/" target="_blank">Swapped</a></li>
+                    </ul>
+                    <p>Transfer your SOL to your Crypto wallet once purchased.</p>
+                    <p>Or buy SOL directly in your wallet - find Web3 inside your wallet and go to Jupiter Onramp</p>
+                    <ul>
+                        <li><a href="https://jup.ag/bridge/onramp" target="_blank">Jupiter Onramp</a></li>
+                    </ul>
+                </div>
+                <div class="buy-step">
+                    <h3>Step 3: Swap Solana for PyraMyth</h3>
+                    <p>Use a decentralized exchange (DEX) to swap your SOL for PyraMyth (Pyrm).</p>
+                    <ul>
+                        <li><a href="https://jup.ag" target="_blank">Jupiter Swap</a></li>
+                    </ul>
+                    <p>Connect your wallet, select SOL and PyraMyth (Pyrm), and execute the swap.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Jupiter-swap">
+            <div class="content-wrapper">
+                <div class="headline-container">
+                    <h2>Jupiter Swap - Soon...</h2>
+                </div>
+                <div class="border-wrapper">
+                    <div id="integrated-terminal">      
+                        <div class="loading-overlay">Loading Jupiter Terminal...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+
+            <!-- Introduction paragraph -->
+            <p class="intro">If you have any questions, feel free to reach out to us:</p>
+
+            <!-- Email section -->
+            <div class="contact-detail email">
+                <strong>Email:</strong>
+                <a href="mailto:PyraMythCoin@gmail.com" class="email-address">PyraMythCoin@gmail.com</a>
+            </div>
+
+            <!-- Solmail section -->
+            <div class="contact-detail solmail">
+                <strong>Solmail:</strong>
+                <a href="https://dapp.solmail.so/compose" class="solmail-address">Soon</a>
+                <span class="copy-button" onclick="copySolmailAddress()">🔗</span>
+            </div>
+        </section>
+
+        <footer>
+            <section id="social-footer">
+                <h2>Connect with us</h2>
+                <a href="https://x.com/PyraMythCoin" class="social-btn x" aria-label="X" target="_blank"></a>
+                <a href="https://t.me/pyramythcoin" class="social-btn telegram" aria-label="Telegram" target="_blank"></a>
+                <a href="https://dexscreener.com" class="social-btn dexscreener" aria-label="DexScreener" target="_blank"></a>
+                <a href="https://www.dextools.io" class="social-btn dextools" aria-label="Dextools" target="_blank"></a>
+                <a href="https://birdeye.so" class="social-btn birdeye" aria-label="Birdeye" target="_blank"></a>
+            </section>
+            <p>&copy; 2025 MGGACoinOnSol. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
