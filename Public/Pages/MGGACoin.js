@@ -4,17 +4,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const chart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ['Validation Airdrop (5%)', 'Phase 2 Airdrop (12,5%)', 'Phase 3 Airdrop (12,5%)', 'Devs (10%)', 'Marketing (5%)', 'Liquidity Pool (55%)'],
+        labels: ['Dev (2.5%)', 'Marketing (5%)', 'Pumpfun (80%)', 'Buyers (12.5%)'],
         datasets: [{
             label: 'Tokenomics Distribution',
-            data: [5, 12.5, 12.5, 10, 5, 55],
+            data: [2.5, 5, 80, 12.5],
             backgroundColor: [
                 '#5973FE',  // Validation Airdrop
                 '#00BFFF',  // Phase 2 Airdrop
                 '#14F195',  // Phase 3 Airdrop
                 '#FFD700',  // Devs (golden color)
-                '#FFC107',  // Marketing (golden orange)
-                '#9945FF'   // Liquidity Pool (light blue for contrast)
                 
             ],
             borderColor: '#fff',
