@@ -275,15 +275,15 @@ section {
 
 /* Individual button styles */
 .chart-buttons .dexscreenertext {
-    background-image: url('Dexscreener text icon.png'); /* Icon path */
+    background-image: url('Images/Dexscreener\ text\ icon.png'); /* Icon path */
 }
 
 .chart-buttons .dextoolstext {
-    background-image: url('Dextools text icon.png'); /* Icon path */
+    background-image: url('Images/Dextools\ text\ icon.png'); /* Icon path */
 }
 
 .chart-buttons .birdeyetext {
-    background-image: url('Birdeye text icon.png'); /* Icon path */
+    background-image: url('Images/Birdeye\ text\ icon.png'); /* Icon path */
     background-size: 60% auto; /* Adjust size for this button */
 }
 
