@@ -1,2 +1,2 @@
 # MGGACoinOnSol
-Make Greenland Great Again Memecoin website
+Make Greenland Great Again Memecoin Website
