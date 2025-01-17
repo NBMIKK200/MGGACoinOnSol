@@ -1,0 +1,74 @@
+/* Header styling */
+header {
+    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195); /* Gradient background */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays on top */
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent wrapping */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Custom scrollbar for WebKit browsers */
+header::-webkit-scrollbar {
+    height: 10px; /* Height of the scrollbar */
+}
+
+header::-webkit-scrollbar-track {
+    background: #ccac00; /* Darker gold for the track */
+}
+
+header::-webkit-scrollbar-thumb {
+    background: #b8860b; /* Dark gold for the thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+header::-webkit-scrollbar-thumb:hover {
+    background: #8b6508; /* Even darker gold on hover */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo .logo-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em; /* Larger font size for the text */
+}
+
+header .logo .logo-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
