@@ -131,21 +131,21 @@ header .social-btn-container {
 
 /* Individual button styles for different icons */
 .social-btn.x {
-    background-image: url('X icon.png'); /* Replace with actual icon path */
+    background-image: url('Images/X\ icon.png'); /* Replace with actual icon path */
 }
 
 .social-btn.telegram {
-    background-image: url('Telegram icon.png'); /* Replace with actual icon path */
+    background-image: url('Images/Telegram\ icon.png'); /* Replace with actual icon path */
 }
 
 .social-btn.dexscreener {
-    background-image: url('Dexscreener icon.png'); /* Replace with actual icon path */
+    background-image: url('Images/Dexscreener\ icon.png'); /* Replace with actual icon path */
 }
 
 .social-btn.dextools {
-    background-image: url('Dextools icon.jpg'); /* Replace with actual icon path */
+    background-image: url('Images/Dextools\ icon.jpg'); /* Replace with actual icon path */
 }
 
 .social-btn.birdeye {
-    background-image: url('Birdeye icon.jpg'); /* Replace with actual icon path */
+    background-image: url('Images/Birdeye\ icon.jpg'); /* Replace with actual icon path */
 }
