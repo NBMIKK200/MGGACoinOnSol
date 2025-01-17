@@ -23,7 +23,6 @@ body {
 
 /* Header styling */
 header {
-    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195); /* Gradient background */
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -160,7 +159,6 @@ header .social-btn-container {
 
 /* Footer styling */
 footer {
-    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195); /* Gradient background */
     color: #fff;
     text-align: center;
     padding: 10px 0; /* Adjust padding for less space around content */
