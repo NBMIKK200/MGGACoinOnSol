@@ -1,1 +1,1361 @@
-.
+/* Main */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #2e2e2e, #1e1e2f, #3a3a3a);
+    color: #ccc;
+}
+
+
+/* Section styling */
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 2.5em; /* Larger font size for section headings */
+    margin-bottom: 20px;
+    color: #ffd700; /* Golden text */
+    font-weight: bold; /* Bold section headings */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for better readability */
+}
+
+section p {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+/* Website Container style */
+.container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 0 0px;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Allows long words to wrap onto the next line */
+}
+
+
+
+
+/* Solana Gradient Background */
+.solana-gradient {
+    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195);
+}
+
+/* Solana Colors */
+.solana-purple {
+    color: #9945FF;
+}
+
+.solana-aqua {
+    color: #14F195;
+}
+
+.solana-blue {
+    color: #5973FE;
+}
+
+
+
+
+
+
+
+
+
+
+/* Header styling */
+header {
+    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195); /* Gradient background */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays on top */
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent wrapping */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Custom scrollbar for WebKit browsers */
+header::-webkit-scrollbar {
+    height: 10px; /* Height of the scrollbar */
+}
+
+header::-webkit-scrollbar-track {
+    background: #ccac00; /* Darker gold for the track */
+}
+
+header::-webkit-scrollbar-thumb {
+    background: #b8860b; /* Dark gold for the thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+header::-webkit-scrollbar-thumb:hover {
+    background: #8b6508; /* Even darker gold on hover */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo .logo-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em; /* Larger font size for the text */
+}
+
+header .logo .logo-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    color: #1e1e2f; /* Dark text color for better readability */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #ffd700, #f5c500); /* Golden gradient background */
+    transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Navigation Button Hover Effect */
+.nav-button:hover {
+    background: linear-gradient(90deg, #f5c500, #e0a800); /* Darker golden gradient on hover */
+    color: #1e1e2f; /* Maintain dark text color on hover for consistency */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover for emphasis */
+}
+
+
+
+
+header .social-btn-container {
+    display: flex;
+    align-items: center; /* Aligns buttons vertically center */
+}
+
+/* Script that helps nav-buttons to go to correct place with sticky header */
+section {
+    scroll-margin-top: 70px; /* Adjust this value to match the height of your sticky header */
+}
+
+/* If you have specific sections you want to target */
+#home, #contact-us {
+    scroll-margin-top: 70px; /* Adjust to match your sticky header height */
+}
+
+
+
+
+
+
+
+
+
+
+/* Social buttons */
+.social-btn {
+    width: 50px; /* Set width for the button */
+    height: 50px; /* Set height for the button */
+    padding: 0; /* Remove default padding */
+    display: inline-block; /* Ensures buttons are inline */
+    background-size: contain; /* Ensure icon fits within the button */
+    background-position: center; /* Center the icon in the button */
+    background-repeat: no-repeat; /* No repeat of background image */
+    background-color: transparent; /* Ensure background color is transparent */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Show pointer cursor on hover */
+    margin: 7px; /* Default margin */
+}
+
+/* Hover effect for buttons */
+.social-btn:hover {
+    opacity: 0.8; /* Slightly change opacity on hover */
+}
+
+/* Additional spacing rules for specific button pairs */
+.social-btn.telegram + .social-btn.dexscreener {
+    margin-left: 30px; /* Extra space between Telegram and DexScreener */
+}
+
+/* Individual button styles for different icons */
+.social-btn.x {
+    background-image: url('X icon.png'); /* Replace with actual icon path */
+}
+
+.social-btn.telegram {
+    background-image: url('Telegram icon.png'); /* Replace with actual icon path */
+}
+
+.social-btn.dexscreener {
+    background-image: url('Dexscreener icon.png'); /* Replace with actual icon path */
+}
+
+.social-btn.dextools {
+    background-image: url('Dextools icon.jpg'); /* Replace with actual icon path */
+}
+
+.social-btn.birdeye {
+    background-image: url('Birdeye icon.jpg'); /* Replace with actual icon path */
+}
+
+
+
+
+
+
+
+
+
+/* Hero section styling */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    background: linear-gradient(135deg, #2e2e2e, #1e1e2f); /* Dark gradient background */
+}
+
+/* Center the hero-logo */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Hero logo text */
+.hero-logo h1 {
+    margin: 0;
+    color: #ffd700; /* Golden text to match the theme */
+    font-size: 48px; /* Adjust font size */
+    font-family: Arial, sans-serif; /* Font family */
+    font-weight: bold; /* Bold text */
+}
+
+/* Hero image styling */
+.hero-logo img {
+    max-width: 100%; /* Ensure the image scales within the container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center the image horizontally */
+    display: block; /* Remove extra space below the image */
+}
+
+/* Hero section text styling */
+.hero p {
+    font-size: 1.2em; /* Adjust font size */
+    color: #ddd; /* Light grey text color for contrast */
+}
+
+/* Style for the hero text */
+.hero-logo h1 {
+    font-size: 48px; /* Adjust this value to change the size */
+    margin-bottom: 10px; /* Optional: add some space between the text and the image */
+}
+
+/* Styling for the tagline */
+.tagline {
+    font-size: 1.5em; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: #14F195; /* Solana Aqua */
+    text-align: center; /* Center alignment */
+    margin: 20px 0; /* Space above and below the tagline */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Slightly stronger text shadow for emphasis */
+    font-family: 'Georgia', serif; /* Elegant serif font for tagline */
+}
+
+/* Container for CA address and label */
+.ca-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    align-items: center; /* Vertically center items */
+    margin-top: 10px; /* Space above the container */
+    gap: 10px; /* Space between items */
+    max-width: 100%; /* Ensure it doesn’t exceed the width of the parent container */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ca-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start of the container */
+    }
+}
+
+/* Styling for CA label */
+.ca-label {
+    margin-right: 10px; /* Space between label and address */
+    font-weight: bold; /* Make the label bold */
+    font-size: 1em; /* Adjust font size if needed */
+    color: #ffd700; /* Golden color to match the theme */
+}
+
+/* CA address styling */
+.ca-address {
+    word-wrap: break-word; /* Break long words onto the next line */
+    overflow-wrap: break-word; /* Break long words if necessary */
+    max-width: 100%; /* Ensure it doesn’t exceed container width */
+    white-space: normal; /* Allow text to wrap */
+    display: inline-block; /* Allows it to sit alongside other elements */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    color: #ddd; /* Light grey text color for better readability */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for address */
+}
+
+/* Style for the copy button */
+.copy-button {
+    cursor: pointer; /* Indicate that it's clickable */
+    font-size: 1.5em; /* Slightly larger icon size */
+    color: #14F195; /* Solana Aqua */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Change color on hover for better feedback */
+.copy-button:hover {
+    color: #5973FE; /* Solana Blue on hover */
+}
+
+/* Styling for confirmation message */
+.confirmation-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195); /* Solana gradient */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+/* Styling for error message */
+.error-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f44336; /* Red background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* General styling for airdrop details and leaderboard */
+#airdrop-details {
+    padding: 20px;
+    margin: 20px auto; /* Center block with margin */
+    max-width: 800px; /* Limiting width for readability */
+    border-radius: 8px;
+    text-align: left; /* Align text to left for readability */
+    color: #ddd; /* Light text color for readability */
+}
+
+
+
+#participation-details {
+    padding: 20px;
+    margin: 20px auto; /* Center block with margin */
+    max-width: 800px; /* Limiting width for readability */
+    border-radius: 8px;
+    text-align: left; /* Align text to left for readability */
+    background-color: #2e2e2e; /* Dark background for sections */
+    color: #ddd; /* Light text color for readability */
+}
+/* Centering text for specific section */
+#airdrop-details {
+    text-align: center;
+}
+
+/* Details box styling */
+.details-box {
+    background-color: #1e1e2f; /* Darker background for details box */
+    border: 1px solid #3a3a6b; /* Subtle border for definition */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+}
+
+/* Section headers */
+#airdrop-details h2,
+#participation-details h3 {
+    font-size: 2em;
+    color: #ffd700; /* Golden text for headers */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Box headers */
+.details-box h3 {
+    font-size: 1.8em;
+    color: #ffd700; /* Golden text */
+    margin-bottom: 15px;
+}
+
+/* Text and list styling */
+.details-box p,
+#participation-details p,
+#participation-details ol {
+    font-size: 1.1em;
+    color: #ccc; /* Light grey text color */
+    line-height: 1.6;
+}
+
+.details-box ol {
+    margin-left: 20px;
+}
+
+.details-box ol li {
+    margin-bottom: 15px;
+}
+
+.details-box ol li strong {
+    color: #ffd700; /* Golden highlights */
+}
+
+.action-link {
+    color: #14F195; /* Solana Aqua links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.action-link:hover {
+    text-decoration: underline;
+    color: #5973FE; /* Solana Blue on hover */
+}
+
+.support-info {
+    font-size: 1.1em;
+    color: #ccc; /* Light grey text color */
+    margin-top: 20px;
+}
+
+/* Airdrop Phase Styling */
+.airdrop-phase {
+    background-color: #2e2e2e; /* Dark background for phase blocks */
+    border: 1px solid #3a3a6b; /* Subtle border */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.airdrop-phase.current-phase {
+    border: 2px solid #ffd700; /* Golden border for the current phase */
+    background-color: #1e1e2f; /* Slightly different dark background */
+}
+
+.phase-title {
+    font-size: 1.5em;
+    color: #ffd700; /* Golden text */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rewards {
+    margin-top: 10px;
+}
+
+.rewards h4 {
+    font-size: 1.2em;
+    color: #ffd700; /* Golden text */
+    margin-bottom: 10px;
+}
+
+.rewards ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    color: #ddd; /* Light text color */
+}
+
+.rewards ul li {
+    margin-bottom: 10px;
+}
+
+.note, .estimates, .distribution {
+    margin: 20px auto;
+    max-width: 800px; /* Center text and limit width */
+}
+
+/* Button Styling */
+.details-button,
+.leaderboard-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195); /* Gradient background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background 0.3s ease; /* Transition for background change */
+    margin-top: 20px;
+    border: none; /* Remove border for a cleaner look */
+}
+
+/* Button hover effect */
+.details-button:hover,
+.leaderboard-button:hover {
+    background: linear-gradient(90deg, #ffd700, #ffcc00, #ff9900); /* Golden gradient background */
+    color: #000; /* Change text color to black for better contrast */
+}
+
+/* Leaderboard Section */
+#leaderboard-link {
+    padding: 20px;
+    margin: 20px auto; /* Center block with margin */
+    max-width: 750px; /* Limiting width for readability */
+    border-radius: 8px;
+    background: #2e2e2e; /* Light green background to match airdrop details */
+    border: 1px solid #2e2e2e; /* Light border to define the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text for this section */
+}
+
+/* Leaderboard Title */
+#leaderboard-link h2 {
+    font-size: 2.5em; /* Larger font size for the title */
+    color: #ffd700; /* Golden text color to match the golden theme */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for emphasis */
+}
+
+/* Leaderboard Description */
+#leaderboard-link p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #ccc; /* Light grey text color */
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Chart Heading */
+#chart h2 {
+    font-size: 2.5em; /* Larger font size for better visibility */
+    color: #ffd700; /* Golden text color for the title */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center heading text */
+    font-weight: bold; /* Bold font for emphasis */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for emphasis */
+}
+
+/* Birdeye graph */
+.chart-container {
+    position: relative;
+    width: 100%; /* Full width of the parent container */
+    max-width: 800px; /* Increased max width by 20% */
+    height: 450px; /* Increased height by 50% */
+    margin: 0 auto 20px; /* Center the container and add space below */
+    padding-top: 0; /* Removed aspect ratio padding */
+}
+
+/* Ensure the chart fits within the container */
+.chart-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensures the iframe fits within the container */
+    border: none; /* Remove default border */
+}
+
+/* Container for buttons */
+.chart-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    justify-content: flex-start; /* Align buttons to the top */
+    margin-top: 20px; /* Reduce space above the buttons */
+    background: #e8f5e8; /* Light green background to match airdrop details */
+    border: 1px solid #c0e3c0; /* Light border to define the section */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the buttons */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 300px; /* Match the width of the leaderboard section */
+    width: 100%; /* Ensure it takes full width up to the max-width */
+    margin: 20px auto; /* Center the box and add spacing */
+}
+
+/* Style for individual buttons */
+.chart-buttons a {
+    display: block; /* Ensure buttons are block elements */
+    height: 50px; /* Fixed height for buttons */
+    width: 300px; /* Adjust width to make buttons more compact */
+    background-size: contain; /* Ensure background image fits within button */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center; /* Center background image */
+    margin: 10px 0; /* Reduce space between buttons */
+    padding: 0; /* Remove padding */
+    text-align: center; /* Center text if there's any */
+    line-height: 50px; /* Center text vertically if there's any */
+    color: transparent; /* Hide text if only images are used */
+}
+
+
+/* Individual button styles */
+.chart-buttons .dexscreenertext {
+    background-image: url('Dexscreener text icon.png'); /* Icon path */
+}
+
+.chart-buttons .dextoolstext {
+    background-image: url('Dextools text icon.png'); /* Icon path */
+}
+
+.chart-buttons .birdeyetext {
+    background-image: url('Birdeye text icon.png'); /* Icon path */
+    background-size: 60% auto; /* Adjust size for this button */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Tokenomics section styling */
+#tokenomics {
+    padding: 40px 20px;
+    text-align: center; /* Center text within the section */
+    border-radius: 8px; /* Rounded corners for better appearance */
+    position: relative; /* Position relative for pseudo-elements */
+    margin: 20px auto;
+    max-width: 750px; /* Max width for better layout */
+    overflow: hidden; /* Hide overflow to maintain clean edges */
+}
+
+/* Add a pseudo-element for gradient shadow effect */
+#tokenomics::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust as needed */
+    left: -10px; /* Adjust as needed */
+    right: -10px; /* Adjust as needed */
+    bottom: -10px; /* Adjust as needed */
+    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195);
+    z-index: -1;
+    border-radius: 12px; /* Slightly larger border-radius to create shadow effect */
+    filter: blur(15px); /* Adjust blur to achieve the desired shadow effect */
+    opacity: 0.7; /* Adjust opacity for shadow effect */
+}
+
+/* Optional: Adjusting the box shadow to enhance the gradient shadow effect */
+#tokenomics {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Softer shadow to complement gradient shadow */
+}
+
+
+/* Style for plain text in tokenomics section */
+#tokenomics p {
+    font-size: 1.1em; /* Adjust font size to match the other text */
+    color: #fff; /* Light color for readability */
+    margin: 10px 0; /* Add margin to separate paragraphs */
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+/* Style for the tokenomics links */
+#tokenomics a.plain-link {
+    color: #ffd700; /* Golden color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold for emphasis */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#tokenomics a.plain-link:hover {
+    color: #fff; /* Change to white on hover */
+}
+
+/* Style for headings */
+#tokenomics h2,
+#tokenomics h3,
+#tokenomics h4 {
+    color: #ffd700; /* Golden color for headings */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+/* Specific font sizes and margins for headings */
+#tokenomics h2 {
+    font-size: 2.5em; /* Larger font size */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#tokenomics h3 {
+    font-size: 1.8em; /* Size for subheadings */
+    margin-bottom: 15px; /* Space below the subheading */
+}
+
+#tokenomics h4 {
+    font-size: 1.2em; /* Size for minor headings */
+    margin-bottom: 10px; /* Space below the minor heading */
+}
+
+/* Heading for the pie chart */
+.tokenomics-visual h3 {
+    font-size: 1.8em; /* Larger font size for the heading */
+    color: #ffd700; /* Golden color to match other headings */
+    margin: 20px 0; /* Space above and below the heading */
+}
+
+.tokenomics-visual {
+    margin-top: 40px;
+}
+
+/* Margin adjustments for text elements */
+#buy-sell-tax,
+#total-supply,
+.lp-locked-text {
+    margin-bottom: 10px; /* Space below the element */
+    color: #ffd700; /* Golden color to match other text */
+}
+
+.lp-locked-text {
+    margin-bottom: 60px; /* Space below the element */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Roadmap section styling */
+#roadmap {
+    padding: 40px 20px;
+    text-align: center; /* Center text within the entire roadmap section */
+    margin: 20px auto;
+    max-width: 1200px; /* Max width for better layout */
+    border-radius: 8px; /* Rounded corners for better appearance */
+}
+
+/* Container for timeline to center it */
+.timeline-container {
+    position: relative;
+    width: 100%; /* Full width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Timeline */
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* Timeline line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    background: #ffd700; /* Golden color to match the theme */
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+/* Timeline items */
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px; /* Increased margin for spacing between items */
+    padding-left: 50px; /* Increased padding for better placement */
+}
+
+/* Timeline marker */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: #14F195; /* Solana Aqua */
+    border-radius: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Content of timeline item */
+.timeline-item-content {
+    background: #2e2e2e; /* White background for clarity */
+    padding: 30px; /* Increased padding for more space inside the item */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    text-align: center; /* Center text within each timeline item */
+    margin: 0 auto; /* Center content in the timeline item */
+    max-width: 600px; /* Max width for better fit */
+}
+
+/* Visuals for completed phases */
+.timeline-item-content.completed {
+    background: #d2fff2; /* Light aqua background for completed phases */
+    color: #ccc; /* Darker text color for contrast */
+}
+
+/* Text styling inside timeline items */
+.timeline-item-content h3 {
+    font-size: 1.5em; /* Slightly larger text for headings */
+    color: #ffd700; /* Golden color to match the theme */
+    margin-bottom: 10px;
+}
+
+/* Smaller text for details */
+.timeline-item-content p {
+    font-size: 1em;
+    color: #ccc; /* Darker gray color for better readability */
+    line-height: 1.6;
+}
+
+/* List styling in timeline items */
+.roadmap-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.roadmap-checklist li {
+    margin-bottom: 20px; /* Increased margin for better spacing between checklist items */
+    font-size: 1.1em;
+    color: #ccc; /* Darker color for readability */
+    line-height: 1.6;
+    position: relative;
+    padding-left: 30px;
+    text-align: center; /* Center checklist items */
+}
+
+/* Style for completed checklist items */
+.roadmap-checklist li.completed {
+    color: #14F195; /* Green color for completed items */
+}
+
+.roadmap-checklist li.completed::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #14F195; /* Green checkmark */
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Buy guide section styling */
+#buy-guide {
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto; /* Added margin for spacing */
+    text-align: center; /* Center the text */
+}
+
+/* Main heading styling */
+#buy-guide h2 {
+    font-size: 2.5em; /* Larger font size for heading */
+    margin-bottom: 30px;
+    color: #ffd700; /* Golden color for consistency */
+    font-weight: bold; /* Make heading bold */
+}
+
+/* Container for steps */
+.buy-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between steps */
+}
+
+/* Individual step styling */
+.buy-step {
+    background-color: #2e2e2e; /* Light beige background for steps */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left within steps */
+}
+
+/* Step heading styling */
+.buy-step h3 {
+    font-size: 1.8em; /* Larger text for steps */
+    color: #ffd700; /* Golden color for step headings */
+    margin-bottom: 15px;
+    font-weight: bold; /* Make step headings bold */
+}
+
+/* Step paragraph styling */
+.buy-step p {
+    font-size: 1.1em;
+    color: #ccc; /* Darker color for readability */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* List styling within steps */
+.buy-step ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+/* List item styling within steps */
+.buy-step ul li {
+    margin-bottom: 10px;
+}
+
+/* Link styling within lists */
+.buy-step ul li a {
+    color: #14F195; /* Solana Aqua for links */
+    text-decoration: none;
+    font-weight: bold; /* Make link text bold */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Link hover effect */
+.buy-step ul li a:hover {
+    color: #9945FF; /* Solana Purple on hover */
+}
+
+/* Additional styling for nested list inside Step 2 */
+.buy-step ul ul {
+    margin-left: 15px; /* Slightly reduce indent for nested list */
+    padding-left: 0; /* Ensure padding is consistent */
+}
+
+/* Nested list item styling */
+.buy-step ul ul li {
+    margin-bottom: 5px; /* Smaller margin for nested items */
+}
+
+/* Buy button styling */
+.buy-button {
+    display: inline-block;
+    background-color: #9945FF; /* Solana Purple for buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px; /* Increased margin for spacing */
+    font-weight: bold; /* Make button text bold */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Buy button hover effect */
+.buy-button:hover {
+    background-color: #5973FE; /* Solana Blue on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Jupiter swap */
+/* Jupiter Swap Section Styling */
+#Jupiter-swap {
+    padding: 40px 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    max-width: 1200px; /* Max width for better layout */
+    margin: 20px auto; /* Center the section horizontally */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Arrange children in a column */
+    min-height: 600px; /* Ensure sufficient height for vertical centering */
+}
+
+/* Wrapper for content alignment */
+.content-wrapper {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+}
+
+/* Style for the headline container */
+.headline-container {
+    margin-top: 30px; /* Space above the headline */
+    margin-bottom: 20px; /* Space below the headline */
+    width: 100%; /* Full width for the headline container */
+    text-align: center; /* Center the text */
+}
+
+/* Style for the headline */
+.headline-container h2 {
+    margin: 0; /* Remove margin to control spacing via container */
+    padding: 20px 0; /* Space above and below the headline */
+    color: #ffd700; /* Golden color for consistency with other headings */
+    font-size: 2.5em; /* Font size to match navigation links or adjust as needed */
+    font-family: Arial, sans-serif; /* Ensure the font family is consistent */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Wrapper for gradient border effect */
+.border-wrapper {
+    position: relative;
+    padding: 10px; /* Space around the border */
+    border-radius: 12px; /* More rounded corners */
+    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195); /* Gradient background */
+    display: inline-block; /* Fit content width */
+    margin: 0; /* Ensure no extra margin around the wrapper */
+}
+
+/* Style for the Jupiter Terminal container */
+#integrated-terminal {
+    width: 100%;
+    max-width: 1000px; /* Increased max-width for better fit */
+    min-width: 370px; /* Minimum width for better fit */
+    height: 100%; /* Adjust height as needed */
+    border: 2px solid transparent; /* Transparent border to allow gradient border effect */
+    border-radius: 12px; /* Match border-radius with the wrapper */
+    background: #2e2e2e; /* Dark background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* Position relative for overlay positioning */
+    padding: 20px; /* Optional padding inside the terminal */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+}
+
+/* Style for the loading overlay */
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Larger font size for better visibility */
+    color: #333; /* Darker text color for better contrast */
+    z-index: 9999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Us Section Styling */
+#contact-us {
+    padding: 40px 20px;
+    background-color: #2e2e2e; /* Slight aqua background to match the theme */
+    text-align: center; /* Center text within the section */
+    border-radius: 8px; /* Rounded corners for better appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the section horizontally */
+    max-width: 800px; /* Max width for better layout */
+}
+
+/* Contact Us Heading */
+#contact-us h2 {
+    font-size: 2.5em; /* Larger font size for better visibility */
+    color: #ffd700; /* Solana Purple */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Contact Us Introduction Paragraph */
+#contact-us .intro {
+    font-size: 1.1em;
+    color: #ccc; /* Darker color for readability */
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space below the introduction paragraph */
+}
+
+/* Email Link Styling */
+.email-address {
+    color: #14F195; /* Solana Aqua */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the link text bold */
+    margin-bottom: 20px;
+}
+
+/* Hover effect for email link */
+.email-address:hover {
+    text-decoration: underline; /* Underline on hover for better indication */
+    color: #5973FE; /* Solana Blue on hover */
+}
+
+/* Solmail Address Styling */
+.solmail-address {
+    color: #14F195; /* Solana Aqua */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make the link text bold */
+    margin-right: 10px; /* Space between the address and the copy icon */
+    margin-bottom: 20px;
+}
+
+/* Hover effect for Solmail address link */
+.solmail-address:hover {
+    text-decoration: underline; /* Underline on hover for better indication */
+    color: #9945FF; /* Solana Purple on hover */
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer styling */
+footer {
+    background: linear-gradient(90deg, #9945FF, #5973FE, #14F195); /* Gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Adjust padding for less space around content */
+    width: 100%; /* Full width of the page */
+    margin-top: 0; /* Ensure there's no extra margin above the footer */
+    position: static; /* Normal flow positioning */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+footer #social-footer {
+    margin-bottom: 10px; /* Space below the social buttons */
+    margin-top: 10px; /* Remove or adjust space above the section */
+    padding: 0; /* Remove padding if adding extra space */
+}
+
+footer #social-footer h2 {
+    margin: 0; /* Remove margin around the heading */
+    font-size: 1.2em; /* Size of the heading */
+    color: #ffffff; /* White text color for high contrast */
+}
+
+/* Footer text styling */
+footer p {
+    margin: 10px 0 0; /* Space above the text */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* airdrop-details.html */
+/* airdrop-details Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+td {
+    background-color: #fff;
+}
+
+.ranking-table {
+    border: 1px solid #ddd;
+}
+
+.invite-table {
+    border: 1px solid #ddd;
+}
+
+.ranking-table th, .invite-table th {
+    background-color: #4CAF50; /* Green for ranking tables */
+}
+
+.ranking-table td, .invite-table td {
+    background-color: #f4f4f4;
+}
+
+/* Styling for note sections */
+.note {
+    text-align: left; /* Aligns text to the left */
+    margin: 10px 0; /* Optional: Adds some space above and below the note */
+    font-style: italic; /* Optional: Makes the note italicized */
+}
+
+/* Airdrop Box */
+.airdrop-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.airdrop-box h3 {
+    margin-top: 0;
+}
+
+.table-container {
+    margin-top: 10px;
+}
+
+.table-container h4 {
+    margin-top: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+
+.recalculation-section {
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Space inside the border */
+    margin-bottom: 20px; /* Space below each section */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.recalculation-section h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recalculation-section p {
+    margin: 5px 0;
+}
+
+.recalculation-section ul {
+    list-style-type: disc;
+    margin: 10px 20px;
+}
+
+.recalculation-section li {
+    margin-bottom: 5px;
+}
