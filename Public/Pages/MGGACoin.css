@@ -1,11 +1,10 @@
 /* Section styling */
 section {
     padding: 70px;
-    padding-top: 20px;
 }
 
 section h1 {
-    margin-top: 200px; /* Adjust the value as needed */
+    margin-top: 200px !important; /* Force margin application */
 }
 
 
