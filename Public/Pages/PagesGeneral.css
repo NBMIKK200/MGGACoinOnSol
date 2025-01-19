@@ -32,25 +32,25 @@ body, .body-container {
 
 
 /* Custom scrollbar for WebKit browsers for body.container */
-body.container::-webkit-scrollbar {
+body-container::-webkit-scrollbar {
     width: 10px; /* Width of the vertical scrollbar */
 }
 
-body.container::-webkit-scrollbar-track {
+body-container::-webkit-scrollbar-track {
     background: #ccac00; /* Darker gold for the track */
 }
 
-body.container::-webkit-scrollbar-thumb {
+body-container::-webkit-scrollbar-thumb {
     background: #b8860b; /* Dark gold for the thumb */
     border-radius: 5px; /* Rounded corners for the thumb */
 }
 
-body.container::-webkit-scrollbar-thumb:hover {
+body-container::-webkit-scrollbar-thumb:hover {
     background: #8b6508; /* Even darker gold on hover */
 }
 
 /* Hide the original scrollbar */
-body.container {
+body-container {
     overflow-y: scroll; /* Enable vertical scrolling */
     scrollbar-width: thin; /* Firefox support for thinner scrollbar */
     scrollbar-color: #b8860b #ccac00; /* Firefox support for thumb and track colors */
