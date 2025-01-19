@@ -602,23 +602,24 @@ section {
     margin-bottom: 5px; /* Smaller margin for nested items */
 }
 
-/* Buy button styling */
-.buy-button {
-    display: inline-block;
-    background-color: #9945FF; /* Solana Purple for buttons */
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+/* Link styling within lists (apply this style to the buy button) */
+.buy-link {
+    color: #14F195; /* Solana Aqua for links */
     text-decoration: none;
-    margin-top: 20px; /* Increased margin for spacing */
-    font-weight: bold; /* Make button text bold */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    font-weight: bold; /* Make link text bold */
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    border-radius: 5px; /* Rounded corners for the link */
+    display: inline-block; /* Make the link behave like a button */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
-/* Buy button hover effect */
-.buy-button:hover {
-    background-color: #5973FE; /* Solana Blue on hover */
+/* Link hover effect */
+.buy-link:hover {
+    background-color: #9945FF; /* Solana Purple background on hover */
+    color: #fff; /* Change text color to white on hover */
+    text-decoration: none; /* Keep it without underline on hover */
 }
+
 
 
 
