@@ -6,7 +6,7 @@ window.Jupiter.init({
   formProps: {
       fixedOutputMint: true,
       swapMode: "ExactIn", // Swap mode: ExactIn or ExactOut
-      initialAmount: "100000000", // Adjust to your desired input amount
+      initialAmount: "1000000000", // Adjust to your desired input amount
       initialInputMint: "So11111111111111111111111111111111111111112", // Replace with your input token's mint address
       initialOutputMint: "FoyZoKXj8LxH29rND5AH5QcqGcH7FqeD8kjmN9zmpump", // Output token's mint address
       initialSlippageBps: 5, // Slippage tolerance in basis points (5 = 0.05%)
