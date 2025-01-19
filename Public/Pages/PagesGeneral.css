@@ -23,45 +23,6 @@ body {
 
 
 
-
-/* Body and Container */
-body, .body-container {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    min-height: 100vh; /* Ensures enough content space for scrolling */
-    position: relative; /* Important for sticky positioning to work */
-}
-
-/* Custom Scrollbar for body-container */
-.body-container {
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    overflow-y: scroll; /* Enable vertical scrolling */
-    scrollbar-width: thin; /* Firefox support for thinner scrollbar */
-    scrollbar-color: #b8860b #ccac00; /* Firefox support for thumb and track colors */
-}
-
-/* Custom scrollbar for WebKit browsers for body-container */
-.body-container::-webkit-scrollbar {
-    width: 10px; /* Width of the vertical scrollbar */
-}
-
-.body-container::-webkit-scrollbar-track {
-    background: #ccac00; /* Darker gold for the track */
-}
-
-.body-container::-webkit-scrollbar-thumb {
-    background: #b8860b; /* Dark gold for the thumb */
-    border-radius: 5px; /* Rounded corners for the thumb */
-}
-
-.body-container::-webkit-scrollbar-thumb:hover {
-    background: #8b6508; /* Even darker gold on hover */
-}
-
-
-
-
 /* Header styling */
 header {
     background: linear-gradient(135deg, #2e2e2e, #1e1e2f, #3a3a3a);
