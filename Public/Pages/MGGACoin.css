@@ -771,22 +771,6 @@ section {
     color: #5973FE; /* Solana Blue on hover */
 }
 
-/* Solmail Address Styling */
-.solmail-address {
-    color: #14F195; /* Solana Aqua */
-    text-decoration: none; /* Remove underline from the link */
-    font-weight: bold; /* Make the link text bold */
-    margin-right: 10px; /* Space between the address and the copy icon */
-    margin-bottom: 20px;
-}
-
-/* Hover effect for Solmail address link */
-.solmail-address:hover {
-    text-decoration: underline; /* Underline on hover for better indication */
-    color: #9945FF; /* Solana Purple on hover */
-}
-
-
 
 
 

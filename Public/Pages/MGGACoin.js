@@ -217,35 +217,6 @@ await performSwap(fromToken, toToken, amount);
     }
 
 
-    // Function to copy Solmail address
-    function copySolmailAddress() {
-        try {
-            // Get the Solmail address text
-            var solmailAddressText = document.querySelector('.solmail-address').textContent.trim();
-           
-            // Create a temporary textarea element to hold the address
-            var tempTextarea = document.createElement('textarea');
-            tempTextarea.value = solmailAddressText;
-            document.body.appendChild(tempTextarea);
-           
-            // Select and copy the Solmail address text
-            tempTextarea.select();
-            document.execCommand('copy');
-           
-            // Remove the temporary textarea element
-            document.body.removeChild(tempTextarea);
-
-
-            // Show confirmation message
-            showMessage('confirmation-message', 'Solmail address copied to clipboard!');
-
-
-        } catch (error) {
-            // Show error message
-            showMessage('error-message', 'Failed to copy Solmail address. Please try again.');
-        }
-    }
-
 
     // Function to show messages
     function showMessage(messageId, messageText) {
@@ -262,7 +233,6 @@ await performSwap(fromToken, toToken, amount);
 
     // Attach event listeners for copying addresses
     document.querySelector('.ca-container .copy-button').addEventListener('click', copyAddress);
-    document.querySelector('.solmail-address').nextElementSibling.addEventListener('click', copySolmailAddress);
 
 
     // Fetch tokens and populate dropdowns or other UI elements
