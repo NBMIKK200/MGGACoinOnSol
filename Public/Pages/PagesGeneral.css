@@ -22,8 +22,6 @@ body {
     overflow: auto; /* Allow the default scrollbar */
 }
 
-
-
 /* Ensure the container can scroll */
 .body-container {
     height: auto; /* Let content dictate height */
@@ -46,9 +44,6 @@ body {
 .body-container::-webkit-scrollbar-thumb:hover {
     background: #8b6508; /* Darker gold on hover */
 }
-
-
-
 
 /* Header styling */
 header {
