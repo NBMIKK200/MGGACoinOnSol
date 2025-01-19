@@ -46,11 +46,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
 function adjustScrollPosition(targetId) {
     const header = document.querySelector('header');  // Get the header
     const headerHeight = header.offsetHeight;  // Get the height of the sticky header
     const targetElement = document.getElementById(targetId);  // Get the target section
+
+    if (!targetElement) {
+        console.log(`Target element with ID ${targetId} not found!`);
+        return; // If the target element doesn't exist, exit early
+    }
+
     const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;  // Get position of target section
+
+    console.log(`Header height: ${headerHeight}, Target position: ${targetPosition}`);
 
     // Scroll to the target position, accounting for the sticky header
     window.scrollTo({
