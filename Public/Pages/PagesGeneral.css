@@ -1,15 +1,3 @@
-
-/* Website Container style */
-.body-container {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto;
-    padding: 0 0px;
-    box-sizing: border-box;
-    word-wrap: break-word; /* Allows long words to wrap onto the next line */
-    position: relative; /* Allow sticky elements to work correctly */
-}
-
 /* Main */
 body {
     font-family: Arial, sans-serif;
@@ -22,38 +10,55 @@ body {
 }
 
 
-
-body, .body-container {
-    overflow-x: visible!important; /* Ensure horizontal overflow is visible */
+/* Website Container style */
+.body-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 0 0px;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Allows long words to wrap onto the next line */
+    position: relative; /* Allow sticky elements to work correctly */
 }
 
 
 
 
+/* Apply styles for Firefox */
+.body-container {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Firefox support for thinner scrollbar */
+    scrollbar-color: #b8860b #ccac00; /* Firefox support for thumb and track colors */
+}
 
-/* Custom scrollbar for WebKit browsers for body.container */
-body-container::-webkit-scrollbar {
+/* Ensure the body and container take up full height */
+body, .body-container {
+    min-height: 100vh; /* Ensures enough content space for scrolling */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Custom scrollbar for WebKit browsers */
+.body-container::-webkit-scrollbar {
     width: 10px; /* Width of the vertical scrollbar */
 }
 
-body-container::-webkit-scrollbar-track {
+.body-container::-webkit-scrollbar-track {
     background: #ccac00; /* Darker gold for the track */
 }
 
-body-container::-webkit-scrollbar-thumb {
+.body-container::-webkit-scrollbar-thumb {
     background: #b8860b; /* Dark gold for the thumb */
     border-radius: 5px; /* Rounded corners for the thumb */
 }
 
-body-container::-webkit-scrollbar-thumb:hover {
+.body-container::-webkit-scrollbar-thumb:hover {
     background: #8b6508; /* Even darker gold on hover */
-}
-
-/* Hide the original scrollbar */
-body-container {
-    overflow-y: scroll; /* Enable vertical scrolling */
-    scrollbar-width: thin; /* Firefox support for thinner scrollbar */
-    scrollbar-color: #b8860b #ccac00; /* Firefox support for thumb and track colors */
 }
 
 
