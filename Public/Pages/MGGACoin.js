@@ -72,6 +72,56 @@ function adjustScrollPosition(targetId) {
 
 
 
+// Function to copy CA address
+function copyAddress() {
+    try {
+        // Get the address text
+        var addressText = document.querySelector('.ca-address').textContent.trim();
+       
+        // Create a temporary textarea element to hold the address
+        var tempTextarea = document.createElement('textarea');
+        tempTextarea.value = addressText;
+        document.body.appendChild(tempTextarea);
+       
+
+
+        // Select and copy the address text
+        tempTextarea.select();
+        document.execCommand('copy');
+       
+        // Remove the temporary textarea element
+        document.body.removeChild(tempTextarea);
+
+        // Show confirmation message
+        showMessage('confirmation-message', 'Address copied to clipboard!');
+    } catch (error) {
+        // Show error message
+        showMessage('error-message', 'Failed to copy address. Please try again.');
+    }
+}
+
+
+// Function to show messages (confirmation or error)
+function showMessage(messageClass, messageText) {
+    var messageElement = document.createElement('div');
+    messageElement.className = messageClass;
+    messageElement.textContent = messageText;
+    document.body.appendChild(messageElement);
+    
+    // Automatically remove the message after 3 seconds
+    setTimeout(function() {
+        document.body.removeChild(messageElement);
+    }, 3000);
+}
+
+
+
+
+
+
+
+
+
     // Function to initialize the Jupiter Swap Terminal
     const initJupiter = () => {
         const endpoint = "https://misty-thrilling-scion.solana-mainnet.quiknode.pro/cf8404eb59e4ff88ff2ef1904ea16e8de1de0135/";
@@ -207,41 +257,16 @@ const toToken = 'exampleToTokenAddress';
 const amount = 1; // Amount to swap
 
 
+
+
+
+
+
+
+
+
 await performSwap(fromToken, toToken, amount);
 });
-
-
-
-
-
-    // Function to copy CA address
-    function copyAddress() {
-        try {
-            // Get the address text
-            var addressText = document.querySelector('.ca-address').textContent.trim();
-           
-            // Create a temporary textarea element to hold the address
-            var tempTextarea = document.createElement('textarea');
-            tempTextarea.value = addressText;
-            document.body.appendChild(tempTextarea);
-           
-            // Select and copy the address text
-            tempTextarea.select();
-            document.execCommand('copy');
-           
-            // Remove the temporary textarea element
-            document.body.removeChild(tempTextarea);
-
-
-            // Show confirmation message
-            showMessage('confirmation-message', 'Address copied to clipboard!');
-
-
-        } catch (error) {
-            // Show error message
-            showMessage('error-message', 'Failed to copy address. Please try again.');
-        }
-    }
 
 
 
@@ -256,11 +281,6 @@ await performSwap(fromToken, toToken, amount);
             messageElement.style.display = 'none';
         }, 3000);
     }
-
-
-    // Attach event listeners for copying addresses
-    document.querySelector('.ca-container .copy-button').addEventListener('click', copyAddress);
-
 
     // Fetch tokens and populate dropdowns or other UI elements
     document.querySelector('#fetch-tokens-button').addEventListener('click', async () => {
