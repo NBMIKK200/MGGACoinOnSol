@@ -7,6 +7,8 @@
     padding: 0 0px;
     box-sizing: border-box;
     word-wrap: break-word; /* Allows long words to wrap onto the next line */
+    overflow-y: auto; /* Enable scrolling */
+    position: relative; /* Allow sticky elements to work correctly */
 }
 
 /* Main */
@@ -17,13 +19,14 @@ body {
     box-sizing: border-box;
     background: linear-gradient(135deg, #2e2e2e, #1e1e2f, #3a3a3a);
     color: #ccc;
+    overflow: auto; /* Allow the default scrollbar */
 }
 
 
 
 /* Ensure the container can scroll */
 .container {
-    overflow-y: auto; /* Enables vertical scrolling */
+    height: auto; /* Let content dictate height */
 }
 
 /* Custom scrollbar for WebKit browsers */
@@ -88,6 +91,8 @@ header::-webkit-scrollbar-thumb {
 header::-webkit-scrollbar-thumb:hover {
     background: #8b6508; /* Even darker gold on hover */
 }
+
+
 
 header .logo {
     display: flex;
