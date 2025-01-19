@@ -45,6 +45,23 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+// Function to adjust the scroll position based on the sticky header height
+function adjustScrollPosition(targetId) {
+    const headerHeight = document.querySelector('header').offsetHeight; // Get the height of the sticky header
+    const targetElement = document.getElementById(targetId); // Get the target section
+    const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight; // Calculate scroll position
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth' // Smooth scroll effect
+    });
+}
+
+
+
+
+
     // Function to initialize the Jupiter Swap Terminal
     const initJupiter = () => {
         const endpoint = "https://misty-thrilling-scion.solana-mainnet.quiknode.pro/cf8404eb59e4ff88ff2ef1904ea16e8de1de0135/";
