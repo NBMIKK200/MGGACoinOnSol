@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const chart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ['Dev (2.5%)', 'Marketing (5%)', 'Buyers (12.5%)', 'Pumpfun (80%)'],
+        labels: ['Dev (2.5%)', 'Marketing (4.1%)', 'Buyers (16.4%)', 'Pumpfun (77%)'],
         datasets: [{
             label: 'Tokenomics Distribution',
-            data: [2.5, 5, 12.5, 80],
+            data: [2.5, 4.1, 16.4, 77],
             backgroundColor: [
                 '#5973FE',  // Dark blue
                 '#00BFFF',  // blue
