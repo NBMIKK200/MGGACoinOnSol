@@ -39,18 +39,6 @@ section p {
 
 
 
-/* Script that helps nav-buttons to go to correct place with sticky header */
-section {
-    scroll-margin-top: 70px; /* Adjust this value to match the height of your sticky header */
-}
-
-/* If you have specific sections you want to target */
-#home, #contact-us, #tokenomics {
-    scroll-margin-top: 70px; /* Adjust to match your sticky header height */
-}
-
-
-
 
 
 /* Hero section styling */
