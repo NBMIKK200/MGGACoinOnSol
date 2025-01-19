@@ -24,7 +24,16 @@ body {
 
 
 
-/* Apply styles for Firefox */
+/* Body and Container */
+body, .body-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh; /* Ensures enough content space for scrolling */
+    position: relative; /* Important for sticky positioning to work */
+}
+
+/* Custom Scrollbar for body-container */
 .body-container {
     overflow-x: hidden; /* Hide horizontal scrollbar */
     overflow-y: scroll; /* Enable vertical scrolling */
@@ -32,18 +41,7 @@ body {
     scrollbar-color: #b8860b #ccac00; /* Firefox support for thumb and track colors */
 }
 
-/* Ensure the body and container take up full height */
-body, .body-container {
-    min-height: 100vh; /* Ensures enough content space for scrolling */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-
-/* Custom scrollbar for WebKit browsers */
+/* Custom scrollbar for WebKit browsers for body-container */
 .body-container::-webkit-scrollbar {
     width: 10px; /* Width of the vertical scrollbar */
 }
@@ -60,7 +58,6 @@ body, .body-container {
 .body-container::-webkit-scrollbar-thumb:hover {
     background: #8b6508; /* Even darker gold on hover */
 }
-
 
 
 
