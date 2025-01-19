@@ -2,6 +2,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    overflow: hidden; /* Prevents vertical scrolling */
 }
 
 /* Container to hold the image and buttons */
@@ -11,6 +12,10 @@ html, body {
     background-image: url('Pages/Images/Landscape.jpg'); /* Replace with your image URL */
     background-size: cover; /* Ensures the image covers the full page */
     background-position: center; /* Centers the image */
+    width: auto; /* Let the width scale proportionally */
+    display: flex; /* Ensure the child aligns properly */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks inside the container */
 }
 
 /* Button container to align buttons */
