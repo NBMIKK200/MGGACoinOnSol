@@ -136,18 +136,6 @@ section p {
     font-family: 'Courier New', Courier, monospace; /* Monospaced font for address */
 }
 
-/* Style for the copy button */
-.copy-button {
-    cursor: pointer; /* Indicate that it's clickable */
-    font-size: 1.5em; /* Slightly larger icon size */
-    color: #14F195; /* Solana Aqua */
-    transition: color 0.3s; /* Smooth color transition */
-}
-
-/* Change color on hover for better feedback */
-.copy-button:hover {
-    color: #5973FE; /* Solana Blue on hover */
-}
 
 /* Styling for confirmation message */
 .confirmation-message {
