@@ -32,25 +32,6 @@ body, html {
 
 
 
-/* Custom scrollbar for WebKit browsers */
-.body-container::-webkit-scrollbar {
-    width: 10px; /* Width of the vertical scrollbar */
-}
-
-.body-container::-webkit-scrollbar-track {
-    background: #ccac00; /* Darker gold for the track */
-}
-
-.body-container::-webkit-scrollbar-thumb {
-    background: #b8860b; /* Dark gold for the thumb */
-    border-radius: 5px; /* Rounded corners for the thumb */
-}
-
-.body-container::-webkit-scrollbar-thumb:hover {
-    background: #8b6508; /* Darker gold on hover */
-}
-
-
 
 /* Header styling */
 header {
