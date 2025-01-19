@@ -22,16 +22,6 @@ body {
 }
 
 
-/* Ensure parent elements do not interfere with sticky positioning */
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-}
-
-
-
 
 /* Header styling */
 header {
