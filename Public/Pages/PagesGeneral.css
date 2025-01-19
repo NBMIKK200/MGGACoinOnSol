@@ -21,9 +21,9 @@ body {
 
 
 
-/* Custom scrollbar for WebKit browsers applied to the container */
+/* Ensure the container can scroll */
 .container {
-    overflow-y: scroll; /* Enable vertical scrolling */
+    overflow-y: auto; /* Enables vertical scrolling */
     height: 100vh; /* Ensure the content fills the viewport height */
 }
 
@@ -43,6 +43,12 @@ body {
 
 .container::-webkit-scrollbar-thumb:hover {
     background: #8b6508; /* Darker gold on hover */
+}
+
+/* Remove default scrollbar on body */
+html, body {
+    overflow: hidden; /* Prevents default scrollbar */
+    height: 100%; /* Ensures the body takes full height */
 }
 
 
