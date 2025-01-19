@@ -18,6 +18,7 @@ body {
     box-sizing: border-box;
     background: linear-gradient(135deg, #2e2e2e, #1e1e2f, #3a3a3a);
     color: #ccc;
+    min-height: 100vh; /* Ensures there’s enough content space for scrolling */
 }
 
 
