@@ -7,7 +7,6 @@
     padding: 0 0px;
     box-sizing: border-box;
     word-wrap: break-word; /* Allows long words to wrap onto the next line */
-    overflow-y: auto; /* Enable scrolling */
     position: relative; /* Allow sticky elements to work correctly */
 }
 
