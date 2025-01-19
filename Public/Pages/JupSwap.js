@@ -1,7 +1,7 @@
 window.Jupiter.init({
     displayMode: "integrated",
     integratedTargetId: "integrated-terminal",
-    endpoint: "https://api.mainnet-beta.solana.com",
+    endpoint: "https://misty-thrilling-scion.solana-mainnet.quiknode.pro/cf8404eb59e4ff88ff2ef1904ea16e8de1de0135/",
     defaultExplorer: "Solscan",
     formProps: {
       fixedOutputMint: true,
