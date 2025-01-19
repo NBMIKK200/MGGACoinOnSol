@@ -7,7 +7,7 @@ window.Jupiter.init({
       fixedOutputMint: true,
       swapMode: "ExactIn",
       initialAmount: "100000000",
-      initialOutputMint: "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+      initialOutputMint: "FoyZoKXj8LxH29rND5AH5QcqGcH7FqeD8kjmN9zmpump",
       initialSlippageBps: 5,
     },
   });
