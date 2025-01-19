@@ -11,4 +11,13 @@ window.Jupiter.init({
       initialSlippageBps: 5,
     },
   });
-  
+
+
+  window.Jupiter.init({
+    /** Required
+     * Solana RPC endpoint
+     * We do not recommend using the public RPC endpoint for production dApp, you will get severely rate-limited
+     */
+    endpoint: 'https://api.mainnet-beta.solana.com',
+    // ...other props
+  });
