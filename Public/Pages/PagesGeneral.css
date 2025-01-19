@@ -21,6 +21,34 @@ body {
 
 
 
+/* Custom scrollbar for WebKit browsers applied to the container */
+.container {
+    overflow-y: scroll; /* Enable vertical scrolling */
+    height: 100vh; /* Ensure the content fills the viewport height */
+}
+
+/* Custom scrollbar for WebKit browsers */
+.container::-webkit-scrollbar {
+    width: 10px; /* Width of the vertical scrollbar */
+}
+
+.container::-webkit-scrollbar-track {
+    background: #ccac00; /* Darker gold for the track */
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #b8860b; /* Dark gold for the thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #8b6508; /* Darker gold on hover */
+}
+
+
+
+
+
 /* Header styling */
 header {
     background: linear-gradient(135deg, #2e2e2e, #1e1e2f, #3a3a3a);
