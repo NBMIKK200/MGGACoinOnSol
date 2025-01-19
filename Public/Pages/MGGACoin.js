@@ -71,7 +71,6 @@ function adjustScrollPosition(targetId) {
 
 
 
-
 // Function to copy CA address
 function copyAddress() {
     try {
@@ -82,8 +81,6 @@ function copyAddress() {
         var tempTextarea = document.createElement('textarea');
         tempTextarea.value = addressText;
         document.body.appendChild(tempTextarea);
-       
-
 
         // Select and copy the address text
         tempTextarea.select();
@@ -100,7 +97,6 @@ function copyAddress() {
     }
 }
 
-
 // Function to show messages (confirmation or error)
 function showMessage(messageClass, messageText) {
     var messageElement = document.createElement('div');
@@ -113,7 +109,6 @@ function showMessage(messageClass, messageText) {
         document.body.removeChild(messageElement);
     }, 3000);
 }
-
 
 
 
