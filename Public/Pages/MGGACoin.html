@@ -10,6 +10,10 @@
     <script defer src="MGGACoin.js"></script>
     <script defer src="JupSwap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Attach the loading script in your <head /> -->
+    <script src="https://terminal.jup.ag/main-v3.js"></script>
+
 </head>
     
 <body>
@@ -211,13 +215,11 @@
         <section id="jupiter-swap">
             <div class="content-wrapper">
                 <div class="headline-container">
-                    <h2>Jupiter Swap - Soon...</h2>
+                    <h2>Jupiter Swap</h2>
                 </div>
-                <div class="border-wrapper">
-                    <div id="integrated-terminal">      
-                        <div class="loading-overlay">Loading Jupiter Terminal...</div>
-                    </div>
-                </div>
+                <!-- Prepare a div in your <body> for Terminal to render -->
+                <!-- Adjust the width and height to suit your requirements -->
+                <div id="integrated-terminal" style="width: 400px; height: 568px;"></div>
             </div>
         </section>
         
