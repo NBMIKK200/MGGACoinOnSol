@@ -376,6 +376,7 @@ section p {
 /* Roadmap section styling */
 #roadmap {
     padding: 40px 20px;
+    margin-top: 60px; /* Ensure there's space at the top to prevent overlap */
     text-align: center; /* Center text within the entire roadmap section */
     margin: 20px auto;
     max-width: 1200px; /* Max width for better layout */
@@ -704,13 +705,6 @@ section p {
     color: #333; /* Darker text color for better contrast */
     z-index: 9999;
 }
-
-
-
-
-
-
-
 
 
 
