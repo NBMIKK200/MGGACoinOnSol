@@ -46,15 +46,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Function to adjust the scroll position based on the sticky header height
 function adjustScrollPosition(targetId) {
-    const headerHeight = document.querySelector('header').offsetHeight; // Get the height of the sticky header
-    const targetElement = document.getElementById(targetId); // Get the target section
-    const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight; // Calculate scroll position
+    const header = document.querySelector('header');  // Get the header
+    const headerHeight = header.offsetHeight;  // Get the height of the sticky header
+    const targetElement = document.getElementById(targetId);  // Get the target section
+    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;  // Get position of target section
 
+    // Scroll to the target position, accounting for the sticky header
     window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth' // Smooth scroll effect
+        top: targetPosition - headerHeight,  // Adjust the scroll position to account for header height
+        behavior: 'smooth'  // Smooth scroll effect
     });
 }
 
