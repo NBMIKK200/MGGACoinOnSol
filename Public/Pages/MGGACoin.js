@@ -70,22 +70,28 @@ function adjustScrollPosition(targetId) {
 
 
 
-// Function to copy CA address using Clipboard API
+// Function to copy CA address
 function copyAddress() {
     try {
         // Get the address text
         var addressText = document.querySelector('.ca-address').textContent.trim();
         
-        // Use Clipboard API to copy text
-        navigator.clipboard.writeText(addressText).then(function() {
-            // Show confirmation message
-            showMessage('confirmation-message', 'Address copied to clipboard!');
-        }).catch(function(error) {
-            // Handle error and show error message
-            showMessage('error-message', 'Failed to copy address. Please try again.');
-        });
+        // Create a temporary textarea element to hold the address
+        var tempTextarea = document.createElement('textarea');
+        tempTextarea.value = addressText;
+        document.body.appendChild(tempTextarea);
+        
+        // Select and copy the address text
+        tempTextarea.select();
+        document.execCommand('copy');
+        
+        // Remove the temporary textarea element
+        document.body.removeChild(tempTextarea);
+
+        // Show confirmation message
+        showMessage('confirmation-message', 'Address copied to clipboard!');
     } catch (error) {
-        // Catch any unexpected errors and show error message
+        // Show error message
         showMessage('error-message', 'Failed to copy address. Please try again.');
     }
 }
@@ -102,6 +108,7 @@ function showMessage(messageClass, messageText) {
         document.body.removeChild(messageElement);
     }, 3000);
 }
+
 
 
 
