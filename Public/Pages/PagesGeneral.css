@@ -61,8 +61,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    position: -webkit-sticky; /* For Safari */
-    position: sticky;
+    position: -webkit-sticky!important; /* For Safari */
+    position: sticky!important;
     top: 0;
     z-index: 1000; /* Ensures the header stays on top */
     overflow-x: auto;
