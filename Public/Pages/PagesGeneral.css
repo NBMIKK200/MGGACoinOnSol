@@ -24,7 +24,6 @@ body {
 /* Ensure the container can scroll */
 .container {
     overflow-y: auto; /* Enables vertical scrolling */
-    height: 100vh; /* Ensure the content fills the viewport height */
 }
 
 /* Custom scrollbar for WebKit browsers */
