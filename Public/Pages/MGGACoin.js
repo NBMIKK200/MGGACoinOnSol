@@ -255,19 +255,6 @@ await performSwap(fromToken, toToken, amount);
     });
 
 
-    // Function to adjust scroll position
-    function adjustScrollPosition(targetId) {
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            // Adjust the scroll position to account for the header height
-            window.scrollTo({
-                top: targetElement.offsetTop - document.querySelector('header').offsetHeight,
-                behavior: 'smooth'
-            });
-        }
-    }
-
-
     // Attach event listeners to your navigation buttons
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function(event) {
