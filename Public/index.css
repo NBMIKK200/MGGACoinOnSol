@@ -5,7 +5,7 @@ html, body {
 }
 
 /* Container to hold the image and buttons */
-.container {
+.body-container {
     position: relative;
     width: 100%;
     height: 100%;
