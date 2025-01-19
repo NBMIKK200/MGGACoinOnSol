@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         labels: ['Dev (2.5%)', 'Marketing (5%)', 'Buyers (12.5%)', 'Pumpfun (80%)'],
         datasets: [{
             label: 'Tokenomics Distribution',
-            data: [2.5, 5, 80, 12.5],
+            data: [2.5, 5, 12.5, 80],
             backgroundColor: [
                 '#5973FE',  // Dark blue
                 '#00BFFF',  // blue
